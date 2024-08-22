@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Floral&Decor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <section class="main">
+                <h1 class="title">Floral & Decor</h1>
+                <div class="main-grid">
+                    <div class="item-1">
+                        <img srcset="./images/p1.png" alt="">
+                        <div class="content">
+                            <ul class="accordion">
+                                <li>
+                                    <div class="accordion-header">Floral
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                    <p class="accordion-content">The Design is the imagination, creativity and inspiration that makes your event unique. We work closely with you to sleuth out your style and then use that insight to develop every aesthetic component of your event from stationery and lighting to flowers and furniture.</p>
+                                </li>
+                                <li>
+                                    <div class="accordion-header">Decor selection
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                    <p class="accordion-content">The Design is the imagination, creativity and inspiration that makes your event unique. We work closely with you to sleuth out your style and then use that insight to develop every aesthetic component of your event from stationery and lighting to flowers and furniture.</p>
+                                </li>
+                                <li>
+                                    <div class="accordion-header">Hair & makeup
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                    <p class="accordion-content">The Design is the imagination, creativity and inspiration that makes your event unique. We work closely with you to sleuth out your style and then use that insight to develop every aesthetic component of your event from stationery and lighting to flowers and furniture.</p>
+                                </li>
+                                <li>
+                                    <div class="accordion-header">Lighting & Sound
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                    <p class="accordion-content">The Design is the imagination, creativity and inspiration that makes your event unique. We work closely with you to sleuth out your style and then use that insight to develop every aesthetic component of your event from stationery and lighting to flowers and furniture.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/p2.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const parent = this.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- sass ./sass/app.scss ./css/app.css --watch -->

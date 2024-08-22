@@ -1,0 +1,17 @@
+.wrapper{
+    max-width: 1920px;
+    margin: auto
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+body{
+    line-height: 1;
+    font-family: $font;
+    color: $text-color;
+    p{
+        font-family: $font-content;
+    }
+}

@@ -1,0 +1,139 @@
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Instrument Serif", serif;
+  color: #462B20;
+}
+body p {
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  max-width: 1920px;
+  background-color: #FFF9F5;
+  padding: 66px;
+  text-align: center;
+}
+.main .title {
+  font-size: 58px;
+  line-height: 61px;
+  margin-bottom: 76px;
+}
+.main .main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 117px;
+  max-width: 1529px;
+  margin: 0 auto;
+}
+.main .main-grid .item-1 {
+  max-width: 560px;
+  padding: 55px;
+}
+.main .main-grid .item-1 .content {
+  margin-top: 25px;
+}
+.main .main-grid .item-1 .content .accordion {
+  list-style: none;
+  padding: 0;
+  text-align: start;
+}
+.main .main-grid .item-1 .content .accordion li {
+  border-top: 1px solid #F3EAE5;
+  padding: 18px 0;
+}
+.main .main-grid .item-1 .content .accordion li .accordion-header {
+  font-size: 26px;
+  line-height: 28px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main-grid .item-1 .content .accordion li .accordion-header i {
+  font-size: 16px;
+  color: #333;
+}
+.main .main-grid .item-1 .content .accordion li .accordion-content {
+  margin-top: 16px;
+  display: none;
+  font-size: 15px;
+  line-height: 23px;
+}
+.main .main-grid .item-1 .content .accordion li.active .accordion-content {
+  display: block;
+}
+.main .main-grid .item-1 .content .accordion li.active .accordion-header i {
+  transform: rotate(180deg);
+}
+.main .main-grid .item {
+  width: 706px;
+  height: 990px;
+}
+@media (max-width: 1400px) {
+  .main {
+    padding: 30px;
+  }
+  .main .main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .main .main-grid .item-1 {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .main .main-grid .item {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,80 @@
+.main{
+    max-width: 1920px;
+    background-color: #FFF9F5;
+    padding: 66px;
+    text-align: center;
+    .title{
+        font-size: 58px;
+        line-height: 61px;
+        margin-bottom: 76px;
+    }
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 117px;
+        max-width: 1529px;
+        margin: 0 auto;
+        .item-1{
+            max-width: 560px;
+            padding: 55px;
+            .content{
+                margin-top: 25px;
+                .accordion {
+                    list-style: none;
+                    padding: 0;
+                    text-align: start;
+                    li{
+                        border-top: 1px solid #F3EAE5;
+                        padding: 18px 0;
+                        .accordion-header{
+                            font-size: 26px;
+                            line-height: 28px;
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            i{
+                                font-size: 16px;
+                                color: #333;
+                            }
+                        }
+                        .accordion-content{
+                            margin-top: 16px;
+                            display: none;
+                            font-size: 15px;
+                            line-height: 23px;
+                        }
+                        &.active .accordion-content{
+                            display: block;
+                        }
+                        &.active .accordion-header i{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .item{
+            width: 706px;
+            height: 990px;
+        }
+    }
+    @media (max-width: 1400px) {
+        padding: 30px;
+    
+        .main-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+    
+          .item-1 {
+            max-width: 100%;
+            padding: 20px;
+          }
+    
+          .item {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+}

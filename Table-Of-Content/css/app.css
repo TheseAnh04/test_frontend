@@ -1,0 +1,114 @@
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Old Standard TT", serif;
+  color: #000000;
+}
+
+.main {
+  max-width: 1520px;
+  background-color: #ffffff;
+  padding: 100px;
+  display: flex;
+}
+.main .title {
+  font-size: 50px;
+  line-height: 55px;
+}
+.main .accordion {
+  font-family: "Inter Tight", sans-serif;
+  list-style: none;
+  margin-right: 15px;
+  width: 520px;
+}
+.main .accordion li {
+  border-top: 1px solid #F3EAE5;
+  padding: 18px 0;
+}
+.main .accordion li .accordion-header {
+  font-size: 15px;
+  line-height: 20px;
+  color: #1A1A1A;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .accordion li .accordion-content {
+  margin-top: 16px;
+  display: none;
+}
+.main .accordion li .accordion-content .list-item {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+}
+.main .accordion li .accordion-content .list-item div {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #A0A0A0;
+}
+.main .accordion li .accordion-content .list-item p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #616161;
+}
+.main .accordion li.active .accordion-content {
+  display: block;
+}
+.main .accordion li.active .accordion-header i {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=app.css.map */
